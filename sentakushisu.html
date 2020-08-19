@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- 文字コード設定 -->
+    <meta charset="UTF-8" />
+
+    <!-- いろんなデバイス幅で表示崩れが起きないようにするやつ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- ページタイトル -->
+    <title>1週間の洗濯指数｜せんたくびより</title>
+
+    <!-- ページ情報 -->
+    <meta name="description" content="ここにページの説明を書く" />
+
+    <!-- css読み込み -->
+    <link rel="stylesheet" href="sentakushisu.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"
+  ></script>
+
+  </head>
+
+  <body>
+    <div class="split-box left-side">
+      <div class="left-side-visual">
+        <img class="left-side-img" src="images/sentakushisu.png" alt="メインビジュル" />
+        <p>1週間の洗濯指数</p>
+      </div>
+      <div class="left-side-content">
+        <h1><a href="sentaku.html">せんたくびより</a></h1>
+       <ul class="header-nav-list">
+        <li>
+          <a href="sentaku.html">1週間の洗濯指数</a>
+        </li>
+        <li>
+          <a href="sentaku1.html">洗濯をする前に</a>
+        </li>
+        <li>
+          <a href="sentaku2.html">洗濯用洗剤・柔軟剤のイロハ</a>
+        </li>
+        <li>
+          <a href="sentaku3.html">洗濯のコツ</a>
+        </li>
+        <li>
+          <a href="sentaku4.html">干し方のコツ</a>
+        </li>
+       </ul>
+       <ul class="header-nav-list2">
+         <li>
+           〇〇市の洗濯日和
+         </li>
+         <h2>
+           22日（水）
+         </h2>
+        <a href="sentakushisu.html">
+          現在地から1週間の洗濯指数を調べる
+          <img src="images/right.png" />
+        </a>
+        </ul>
+      </div>
+    </div>
+
+    <div class="split-box right-side">
+     <section class="header">
+       <ul class="header-list">
+         <li>
+            <a href="" class="header-list-text">
+             名古屋市の洗濯指数
+             <img src="images/scroll.png"/>
+           </a>
+         </li>
+         <li>
+            <a href="" class="header-list-text"> 
+             洗濯指数の見方
+            <img src="images/scroll.png"/>
+           </a>
+         </li>
+         <li>
+            
+         </li>
+        </ul>
+     </section>
+
+     <div class="media-header">
+      <img src="images/media-header.png"/>
+      <p><a href="sentaku.html">せんたくびより</a></p>
+  </div>
+     <div class="header-sp-icon-wrap">
+        <div class="header-sp-icon-bar1"></div>
+        <div class="header-sp-icon-bar2"></div>
+        <div class="header-sp-icon-bar3"></div>
+     </div>
+
+    <div class="media-header-sp-nav">
+      <div class="media-header-sp-nav-img-wrap">
+        <a href="sentaku.html">
+          <img src="images/logo.png" alt="ロゴイメージ" />
+          <p>せんたくびより</p>
+        </a>
+      </div>
+      <ul class="media-header-sp-nav-list">
+          <li>
+              <a href="sentakushisu.html">1週間の洗濯指数<img src="images/right.png" /></a>
+          </li>
+          <li>
+            <a href="sentaku1.html">洗濯をする前に<img src="images/right.png" /></a>
+         </li>
+         <li>
+            <a href="sentaku2.html">洗濯用洗剤・柔軟剤のイロハ<img src="images/right.png" /></a>
+         </li>
+         <li>
+          <a href="sentaku3.html">洗濯のコツ<img src="images/right.png" /></a>
+         </li>
+         <li>
+          <a href="sentaku4.html">干し方のコツ<img src="images/right.png" /></a>
+         </li>
+       </ul>
+    </div>
+
+     <main class="sentakushisu">
+        <h1 class="title">名古屋市の洗濯指数</h1>
+        <section class="today-tomorrow-shisu">
+         <div class="today-shisu">
+            <h2 class="sub-title" id="today-date"> </h2>
+            <div class="shisu-icon" id="today-shisu-icon">
+              <!-- <img src="images/shisu1.png"/>
+              <p class="shisu-setsumei">
+                 <br>大変よく乾く
+              </p> -->
+            </div>
+         </div>
+
+         <div class="tomorrow-shisu">
+             <h2 class="sub-title" id="tomorrow-date"></h2>
+             <div class="shisu-icon" id="tomorrow-shisu-icon">
+               <!-- <img src="images/shisu1.png"/>
+               <p class="shisu-setsumei">
+                  <br>大変よく乾く
+               </p> -->
+             </div>
+          </div>
+        </section>
+
+         <div class="next-hiyori">
+            <h2 class="sub-title">次の洗濯日和</h2>
+            <div class="shisu-icon-next-hiyori" id = "next-hiyori">
+            </div>
+         </div>
+         
+         <h2 class="sub-title">1週間の洗濯指数</h2>
+         <div class="week-shisu">
+             <div class="shisu-day" id="shisu-day1">
+                 <!-- <img src="images/shisu1.png"/>
+                 <p class="week-date">8月17日<br>(月)</p> -->
+             </div>
+             <div class="shisu-day" id="shisu-day2">
+                <!-- <img src="images/shisu1.png"/>
+                <p class="week-date">8月18日<br>(火)</p> -->
+            </div>
+            <div class="shisu-day" id="shisu-day3">
+                <!-- <img src="images/shisu2.png"/>
+                <p class="week-date">8月19日<br>(水)</p> -->
+            </div>
+            <div class="shisu-day" id="shisu-day4">
+                <!-- <img src="images/shisu1.png"/>
+                <p class="week-date">8月20日<br>(木)</p> -->
+            </div>
+            <div class="shisu-day" id="shisu-day5">
+                <!-- <img src="images/shisu1.png"/>
+                <p class="week-date">8月21日<br>(金)</p> -->
+            </div>
+            <div class="shisu-day" id="shisu-day6">
+                <!-- <img src="images/shisu1.png"/>
+                <p class="week-date">8月22日<br>(土)</p> -->
+            </div>
+            <div class="shisu-day" id="shisu-day7">
+                <!-- <img src="images/shisu3.png"/>
+                <p class="week-date">8月23日<br>(日)</p> -->
+            </div>
+         </div>
+         <div class="block">
+            <img src="images/block.png"/>
+        </div>
+
+     </main>
+
+     <main class="shisu-mikata">
+         <h7 class="title">洗濯指数の見方</h7>
+        <div class="mikata-ichiran">
+         <div class="mikata-setsumei">
+            <img src="images/shisu1.png"/>
+            <pre>大変よく乾く</pre>
+      　　</div>
+         <div class="mikata-setsumei">
+            <img src="images/shisu2.png"/>
+            <pre>  よく乾く</pre>
+    　  　</div>
+         <div class="mikata-setsumei">
+            <img src="images/shisu3.png"/>
+            <pre>   乾く</pre>
+  　    　</div>  
+         <div class="mikata-setsumei">
+            <img src="images/shisu4.png"/>
+            <pre>  やや乾く</pre>
+　      　</div>
+         <div class="mikata-setsumei">
+            <img src="images/shisu5.png"/>
+            <pre>部屋干し推奨</pre>
+　     　</div>
+       </div>
+         <div class="shisu-about">
+              洗濯指数とは、天気や気温などの予測から計算した<br>
+              「洗濯物の乾きやすさ」を表すものです。<br>
+              <br>
+             「大変よく乾く」「よく乾く」なら厚手の洗濯物も OK、<br>
+              短時間で洗濯物が乾く気象条件です。
+         </div>
+        </main>
+
+        <section class="category">
+          <h3>CATEGORY</h3>
+          <ul class="category-list">
+           <li>
+             <div class="category-img">
+               <img src="images/asset1.jpg" alt="カテゴリー写真" />
+             </div>
+             <div class="category-text">
+               <p class="category-list-title"><a href="sentaku1.html">洗濯をする前に</a></p>
+               <p class="category-list-about">
+                 大切な衣服を良い状態で長く保つために、<br>
+                 洗濯をする前にいくつかの確認事項があります。
+               </p>
+             </div>
+           </li>
+           <li class="category-list-reverse">
+             <div class="category-img">
+               <img src="images/asset2.jpg" alt="カテゴリー写真" />
+             </div>
+             <div class="category-text">
+               <p class="category-list-title"><a href="sentaku2.html">洗濯用洗剤・柔軟剤のイロハ</a></p>
+               <p class="category-list-about">
+                 数多くの洗濯用洗剤・柔軟剤の中から<br>
+                 あなたの洗濯物に適したものを選びましょう。
+               </p>
+             </div>
+           </li>
+           <li>
+             <div class="category-img">
+               <img src="images/asset3.jpg" alt="カテゴリー写真" />
+             </div>
+             <div class="category-text">
+               <p class="category-list-title"><a href="sentaku3.html">洗濯のコツ</a></p>
+               <p class="category-list-about">
+                 洗濯機を使用する場合と手洗いをする場合の<br>
+                 洗濯のコツを紹介します。
+               </p>
+             </div>
+           </li>
+           <li class="category-list-reverse">
+             <div class="category-img">
+               <img src="images/asset4.jpg" alt="カテゴリー写真" />
+             </div>
+             <div class="category-text">
+               <p class="category-list-title"><a href="sentaku4.html">干し方のコツ</a></p>
+               <p class="category-list-about">
+                 洗い終わった洗濯物を効率よく乾かすための<br>
+                 干し方のコツを紹介します。
+               </p>
+             </div>
+           </li>
+           </ul>
+        </section>
+      
+      <footer>
+       <a class="scroll-top" href="">
+         <img src="images/up.png" />
+         <p>TOP</p>
+       </a>
+      </footer>
+
+    </div>
+
+    <!-- <ul id="messages"></ul>
+    <div id="result"></div> -->
+
+    <script src="weather.js"></script>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>

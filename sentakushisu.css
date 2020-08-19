@@ -1,0 +1,682 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: "からかぜ";
+    src: url(karakaze-R.ttf);
+    font-weight: 600;
+}
+
+body{
+    font-family: "Klee";
+    color: #311400;
+}
+
+.split-box{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+}
+
+.left-side{
+    left: 0;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    z-index: 2;
+}
+
+.left-side-visual{
+    position: relative;
+}
+
+.left-side-visual p{
+    position: absolute;
+    top: 85vh;
+    left: 5vw;
+    font-size: 50px;
+}
+
+.left-side-img {
+    width: 100%;
+    height: auto;
+} 
+
+.left-side-content{
+    width: 41%;
+    height: 70%;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    padding: 0 0 2% 0;
+    margin: 4%;
+    background-color:rgba(224, 237, 255, 0.65);
+}
+
+.left-side-content h1 {
+    list-style: none;
+    font-family: "からかぜ";
+    font-size: 27px;
+    margin: 16% 0 10% 9%;
+}
+
+.left-side-content a{
+    text-decoration: none;
+    color: #311400;
+}
+
+.header-nav-list{
+    list-style: none;
+    display: inline-block;
+    margin: 0 0 0 9%;
+    font-family: "Klee";
+}
+
+.header-nav-list li{
+    margin: 0 1w;
+    margin-top: 10%;
+}
+
+.header-nav-list a{
+    text-decoration: none;
+    color: #311400;
+    font-size: 83%;
+}
+
+.header-nav-list2 {
+    list-style: none;
+    margin: 0 1w;
+    margin-top: 25pt;
+    margin-left: 20px;
+}
+
+.header-nav-list2 li{
+    color: #311400;
+    font-size: 17px;
+    margin-top: 45pt;
+}
+
+.header-nav-list2 h2{
+    color: #311400;
+    font-size: 25px;
+    margin-top: 13pt;
+}
+
+.header-nav-list2 a{
+    width: 200px;
+    height: 30px;
+    font-size: 10px;
+    font-weight: 300;
+    text-decoration: none;
+    background-color:rgba(255, 255, 255, 0.4);
+    color: #231300;
+    border: solid 1px #231300;
+    float: left;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 20pt;
+}
+
+.header-nav-list2 img{
+    width: 7px;
+    margin-left: 7px;
+}
+
+.media-header {
+    display: none;
+}
+
+.right-side{
+    right: 0;
+    overflow-y: scroll;
+}
+
+.header{
+    width: 50%;
+    height: 55px;
+    position: fixed;
+}
+
+.header-list{
+    display: flex;
+}
+
+.header-list li{
+    width: 33%;
+    height: 55px;
+    font-size: 13px;
+    list-style: none;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: solid 1px white;
+    background-color: rgba(190,204,224,0.7);
+}
+
+.header-list a{
+    text-decoration: none;
+    color: #311400;
+}
+
+.header-list img{
+    width: 7%;
+}
+
+.media-header-sp-nav {
+    display: none;
+}
+
+.title {
+    font-size: 37px;
+    padding: 150px 55px 7px;
+}
+
+.title2 {
+    font-size: 37px;
+    padding: 20px 55px;
+}
+
+.sub-title {
+    font-size: 18px;
+    margin: 40px 55px 10px;
+}
+
+.today-tomorrow-shisu {
+    display: flex;
+}
+
+.shisu-icon {
+    display: flex;
+}
+
+.shisu-icon p {
+    padding: 10px 0;
+}
+
+.shisu-icon img{
+    padding: 10px 10px 10px 60px;
+}
+
+.shisu-icon-next-hiyori {
+    display: flex;
+    align-items: center;    
+    padding: 10px 10px 10px 60px;
+}
+
+.shisu-icon-next-hiyori p {
+    padding: 0 50px;
+}
+
+.week-shisu {
+    display: flex;
+    padding: 10px 55px 70px;
+} 
+
+.shisu-day {
+    padding: 11px 7px 0 0;
+}
+
+.shisu-day img{
+    width: 76.94px;
+}
+
+.shisu-day p {
+    font-size: 12px;
+    text-align: center;
+}
+
+.mikata-ichiran {
+    display: flex;
+    padding-left: 55px;
+    padding-top: 27px;
+}
+
+.mikata-setsumei {
+    padding: 10px  10px 50px;
+}
+
+.mikata-setsumei pre {
+    font-family: "Klee";
+}
+
+.shisu-about {
+    padding: 0 55px 210px;
+}
+
+.block img{
+    padding: 0 33px 80px;
+    width: 100%;
+}
+
+.category{
+    background-color: #EBF3FF;
+    height: 1200px;
+}
+
+.category h3{
+    font-family: "からかぜ";
+    text-align: center;
+    font-size: 40px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.category-list {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.category-list li{
+    width: 50%;
+    list-style: none;
+    padding-bottom: 80px;
+}
+
+.category-list a{
+    text-decoration: none;
+    color: #311400;
+}
+
+.category-list img{
+    width: 240px;
+    justify-content: center;
+}
+
+.category-list-title {
+    font-size: 17px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+} 
+
+.category-list-about{
+    font-size: 8px;
+}
+
+footer{
+    height: 120px;
+    background-color: #CCE2FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 11%;
+    padding: 5%;
+}
+
+.scroll-top{
+    text-decoration: none;
+}
+
+.scroll-top img{
+    width: 30px;
+}
+
+.scroll-top p{
+    text-decoration: none;
+    font-family: "からかぜ";
+    color: #311400;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    .left-side{
+        display: none;
+    }
+
+    .header-list {
+        display: none;
+    }
+
+    .media-header {
+        display: grid;
+        position: relative;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .media-header img {
+        width: 100%;
+    }
+
+    .media-header p {
+        position: absolute;
+        top: 10%;
+        left: 2%;
+        font-family: "からかぜ";
+        font-size: 31px;
+    }
+
+    .right-side {
+        width: 100%;
+        height: 100%;
+    }
+
+    h1.title {
+        padding-top: 28%;
+    }
+
+    h7.title {
+        font-size: 21px;
+
+    }
+
+    .sentakushisu {
+        text-align: center;
+        font-size: 14px;
+        margin: 60px;
+        background-color: white;
+    }
+
+    .today-tomorrow-shisu {
+        justify-content: center;
+    }
+
+    .shisu-icon-next-hiyori {
+        padding: 0;
+        justify-content: center;
+    }
+
+    .week-shisu {
+        padding: 0;
+        justify-content: center;
+    }
+
+    .shisu-mikata {
+        text-align: center;
+        font-size: 14px;
+        margin: 60px;
+    }
+
+    .shisu-about {
+        padding-bottom: 20%;
+    }
+
+    .block img {
+        padding: 4%;
+    }
+
+    .mikata-ichiran {
+        padding: 0;
+        justify-content: center;
+    }
+
+    .mikata-setsumei {
+        padding: 2% 1%;
+        width: 20%;
+    }
+
+    .category-list {
+        text-align: left;
+    }
+
+    .category h3{
+        font-size: 24px;
+    }
+
+    .category-list li {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding-bottom: 0;
+    }
+    
+    .category-list img {
+        width: 100%;
+    }
+
+    .category-img {
+        width: 50%;
+    }
+
+    .category-text a{
+        font-size: 17px;
+    }
+
+    p.category-list-about {
+        font-size: 7px;
+    }
+
+    .category-list-title {
+        font-size: 14px;
+        margin: 10px 0 10px;
+    } 
+
+    .category-text {
+        width: 50%;
+        text-align: center;
+    }
+
+    .category-list-reverse {
+        flex-direction: row-reverse;
+    }
+    
+    .category{
+        background-color:rgba(235,243, 255, 0.7);
+        height: auto;
+    }
+
+    footer {
+        height: 120px;
+    }
+
+    .media-header a {
+        text-decoration: none;
+        color: #311400;
+    }
+
+    .header-sp-icon-wrap{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        z-index: 50;
+        top: 4vw;
+        right: 6%;
+    }
+
+    .header-sp-icon-bar1,
+    .header-sp-icon-bar2,
+    .header-sp-icon-bar3{
+        position: relative;
+        width: 100%;
+        height: 2px;
+        background-color: #311400;
+        border-radius: 1px;
+        transform-origin: left;
+        transition: all 0.3s ease-out;
+    }
+
+    .is-open .header-sp-icon-bar1 {
+        transform: rotate(45deg);
+        z-index: 100;
+    }
+
+    .is-open .header-sp-icon-bar2 {
+        transform: scale(0);
+    }
+
+    .is-open .header-sp-icon-bar3 {
+        transform: rotate(-45deg);
+    }
+
+    .media-header-sp-nav{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background-color: rgba(255,255,255,0.9);
+        display: none;
+    }
+
+    .media-header-sp-nav p {
+        font-family: "からかぜ";
+        font-size: 21px;
+        text-align: center;
+    }
+
+    .media-header-sp-nav-list{
+        width: 60%;
+        margin: auto;
+        list-style: none;
+    }
+
+    .media-header-sp-nav-img-wrap{
+        width: 150px;
+        margin: 15vh auto 10vh;
+    }
+
+    .media-header-sp-nav-img-wrap a {
+        text-decoration: none;
+        color: #311400;
+    }
+
+    .media-header-sp-nav-img-wrap img{
+        width: 100%;
+    }
+
+    .media-header-sp-nav-list li{
+        margin-bottom: 60px;
+    }
+
+    .media-header-sp-nav-list a{
+        font-size: 20px;
+        color: #311400;
+        text-decoration: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .media-header-sp-nav-list img{
+        width: 7px;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    h1.title {
+        padding: 20% 0 5%;
+    }
+
+    .shisu-day img {
+    width: 95%;
+}
+
+    .mikata-ichiran img {
+       width: 90%;
+    }
+
+    .mikata-setsumei p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .media-header p {
+        font-size: 23px;
+    }
+
+    h1.title {
+        font-size: 21px;
+    }
+
+    section.today-tomorrow-shisu {
+        padding: 0;
+    }
+
+    h2.sub-title {
+        font-size: 20px;
+        margin: 10% 0 5% 0;
+    }
+
+    .today-tomorrow-shisu {
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+        padding: 38px;
+        justify-content: center;
+    }
+
+    .shisu-icon {
+        justify-content: center;
+    }
+
+    .shisu-icon img {
+        padding: 0;
+    }
+
+    .shisu-icon p {
+        padding: 11% 0 0 7%;
+    }
+
+    .today-tomorrow-shisu img {
+        width: 40%;
+    }
+
+    .shisu-icon-next-hiyori img {
+        width: 40%;
+    }
+
+    .shisu-icon-next-hiyori p {
+        padding: 11% 0 0 7%;
+    }
+
+    .shisu-day {
+        padding: 2%;
+    }
+
+    .shishu-day p {
+        font-size: 10px;
+    }
+
+    div.shisu-about {
+        padding: 0;
+    }
+
+    .block img {
+        padding: 10% 7% 3%;
+    }
+
+    div.week-shisu {
+        white-space: nowrap;
+        overflow: scroll;
+        
+    }
+
+} 
+
+@media screen and (max-width:590px) {
+    .mikata-setsumei img {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .mikata-setsumei pre {
+        font-size: 10px;
+    }
+
+    .mikata-setsumei img {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .media-header p {
+        font-size: 19px;
+    }
+
+}
