@@ -174,11 +174,11 @@ promise
         }
       }
       console.log(w_sentaku);
-      document.getElementById('today-date').innerHTML = '今日' + w_day[0] + '(' + week_temp[w_week[0]] +')';
-      document.getElementById('tomorrow-date').innerHTML = '明日' + w_day[1] + '(' + week_temp[w_week[1]] +')';
-      document.getElementById('today-shisu-icon').innerHTML = '<img src="' + sentaku_icon[w_sentaku[0]] + '"/><p class="shisu-setsumei"><br>' + sentaku_setsumei[w_sentaku[0]] + '</p>';
-      document.getElementById('tomorrow-shisu-icon').innerHTML = '<img src="' + sentaku_icon[w_sentaku[1]] + '"/><p class="shisu-setsumei"><br>' + sentaku_setsumei[w_sentaku[1]] + '</p>';
-      document.getElementById('next-hiyori').innerHTML = '<img src="' + sentaku_icon[w_sentaku[best_day]] + '"/><p class="shisu-setsumei"><br>' + w_day[best_day] + '(' + week_temp[w_week[best_day]] +')' + '</p>';
+      document.getElementById("today-date").innerHTML = '今日' + w_day[0] + '(' + week_temp[w_week[0]] +')';
+      document.getElementById("tomorrow-date").innerHTML = '明日' + w_day[1] + '(' + week_temp[w_week[1]] +')';
+      document.getElementById("today-shisu-icon").innerHTML = '<img src="' + sentaku_icon[w_sentaku[0]] + '"/><p class="shisu-setsumei"><br>' + sentaku_setsumei[w_sentaku[0]] + '</p>';
+      document.getElementById("tomorrow-shisu-icon").innerHTML = '<img src="' + sentaku_icon[w_sentaku[1]] + '"/><p class="shisu-setsumei"><br>' + sentaku_setsumei[w_sentaku[1]] + '</p>';
+      document.getElementById("next-hiyori").innerHTML = '<img src="' + sentaku_icon[w_sentaku[best_day]] + '"/><p class="shisu-setsumei"><br>' + w_day[best_day] + '(' + week_temp[w_week[best_day]] +')' + '</p>';
       for(var i=1; i<8; i++){
         document.getElementById('shisu-day'+i).innerHTML = '<img src="' + sentaku_icon[w_sentaku[i]] + '"/><p class="week-date">' + w_day[i] + '<br>' + "(" + week_temp[w_week[i]] + ")" + '</p>';
       }
