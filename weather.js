@@ -90,7 +90,7 @@ promise
       var cityName = "aichi";
       var owmApiKey = "9a985b1eecc46861e493cc38b6e89456";
       var owmURL =
-        "http://api.openweathermap.org/data/2.5/onecall?units=metric&lat=" +
+        "https://api.openweathermap.org/data/2.5/onecall?units=metric&lat=" +
         lat +
         "&lon=" +
         lng +
@@ -183,40 +183,6 @@ promise
         document.getElementById('shisu-day'+i).innerHTML = '<img src="' + sentaku_icon[w_sentaku[i]] + '"/><p class="week-date">' + w_day[i] + '<br>' + "(" + week_temp[w_week[i]] + ")" + '</p>';
       }
 
-
-
-
-        //     month +
-        //     "月" +
-        //     day +
-        //     "日" +
-        //     week_temp[dayOfWeek] +
-        //     "天気:" +
-        //     data["current"]["weather"][0]["main"] +
-        //     ", 気温:" +
-        //     data["current"]["temp"] +
-        //     ", 湿度:" +
-        //     data["current"]["humidity"] +
-        //     ",洗濯指数:" +
-        //     sentaku +
-        //     "</p></il>" +
-        //     "<il><p>明日" +
-        //     next_month +
-        //     "月" +
-        //     next_day +
-        //     "日" +
-        //     week_temp[next_week] +
-        //     "洗濯指数" +
-        //     w_sentaku[0] +
-        //     "</p></il><il><p> 一週間の洗濯指数<br>" +
-        //     w_sentaku_str +
-        //     "<br>次の最適:" +
-        //     best_day +
-        //     "</p></il>"
-        // );
-
-        //HTMLに取得したデータを追加する
-        // messageList.append(messageElement);
       };
 
       request.send();
