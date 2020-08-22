@@ -6,7 +6,13 @@
 
 @font-face{
     font-family: "からかぜ";
-    src: url(karakaze-R.ttf);
+    src: url(fonts/karakaze-R.ttf);
+    font-weight: 600;
+}
+
+@font-face{
+    font-family: "Klee";
+    src: url(fonts/Klee-medium.ttf);
     font-weight: 600;
 }
 
