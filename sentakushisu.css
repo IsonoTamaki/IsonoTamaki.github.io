@@ -35,8 +35,8 @@ body{
 
 .left-side-visual p{
     position: absolute;
-    top: 85vh;
-    left: 5vw;
+    top: 80vh;
+    left: 4%;
     font-size: 50px;
 }
 
@@ -47,11 +47,11 @@ body{
 
 .left-side-content{
     width: 41%;
-    height: 70%;
+    height: 50%;
     position: absolute;
     z-index: 5;
     top: 0;
-    padding: 0 0 2% 0;
+    padding: 3% 0 2% 0;
     margin: 4%;
     background-color:rgba(224, 237, 255, 0.65);
 }
@@ -71,7 +71,7 @@ body{
 .header-nav-list{
     list-style: none;
     display: inline-block;
-    margin: 0 0 0 9%;
+    margin: 10% 0 0 9%;
     font-family: "Klee";
 }
 
@@ -133,6 +133,7 @@ body{
 .right-side{
     right: 0;
     overflow-y: scroll;
+    width: 50%;
 }
 
 .header{
@@ -216,12 +217,16 @@ body{
     padding: 10px 55px 70px;
 } 
 
+.yoko-scroll {
+    display: none;
+}
+
 .shisu-day {
     padding: 11px 7px 0 0;
 }
 
 .shisu-day img{
-    width: 76.94px;
+    width: 95%;
 }
 
 .shisu-day p {
@@ -365,7 +370,7 @@ footer{
 
     h7.title {
         font-size: 21px;
-
+        padding: 20% 0 5%;
     }
 
     .sentakushisu {
@@ -564,6 +569,10 @@ footer{
         width: 7px;
     }
 
+    main#shisu-mikata {
+        text-align: center;
+    }
+
 }
 
 @media screen and (max-width: 640px) {
@@ -653,7 +662,12 @@ footer{
     div.week-shisu {
         white-space: nowrap;
         overflow: scroll;
-        
+        justify-content: left;
+    }
+
+    .yoko-scroll {
+        display: grid;
+        justify-content: center;
     }
 
 } 

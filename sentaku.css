@@ -44,11 +44,11 @@ body{
 
 .left-side-content{
     width: 41%;
-    height: 70%;
+    height: 50%;
     position: absolute;
     z-index: 5;
     top: 0;
-    padding: 0 0 2% 0;
+    padding: 3% 0 2% 0;
     margin: 4%;
     background-color:rgba(224, 237, 255, 0.65);
 }
@@ -72,7 +72,7 @@ body{
 .header-nav-list{
     list-style: none;
     display: inline-block;
-    margin: 0 0 0 9%;
+    margin: 10% 0 0 9%;
     font-family: "Klee";
 }
 
@@ -261,18 +261,25 @@ footer{
         font-family: "からかぜ";
         font-size: 32px;
         margin: 210px 0;
+        justify-content: center;
     }
 
     .media-title a {
-        border: solid 1px #311400;
+        border: solid 0.5px #311400;
         font-family: "Klee";
-        font-size: 14px;
+        font-size: 12px;
         text-decoration: none;
+        text-align: center;
+        color: #311400;
+        margin: 7%;
+        padding: 1%;
     }
 
     .media-title img {
-        width: 1%;
+        width: 3%;
     }
+
+
 
     .right-side p {
         display: grid;

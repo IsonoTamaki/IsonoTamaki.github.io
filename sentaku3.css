@@ -36,7 +36,7 @@ body{
 .left-side-visual p{
     position: absolute;
     top: 85vh;
-    left: 5vw;
+    left: 4%;
     font-size: 50px;
 }
 
@@ -47,11 +47,11 @@ body{
 
 .left-side-content{
     width: 41%;
-    height: 70%;
+    height: 50%;
     position: absolute;
     z-index: 5;
     top: 0;
-    padding: 0 0 2% 0;
+    padding: 3% 0 2% 0;
     margin: 4%;
     background-color:rgba(224, 237, 255, 0.65);
 }
@@ -71,7 +71,7 @@ body{
 .header-nav-list{
     list-style: none;
     display: inline-block;
-    margin: 0 0 0 9%;
+    margin: 10% 0 0 9%;
     font-family: "Klee";
 }
 
