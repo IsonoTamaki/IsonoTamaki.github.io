@@ -6,9 +6,11 @@
 
 @font-face{
     font-family: "からかぜ";
-    src: url(fonts/karakaze-R.ttf);
+    /* src: url(fonts/karakaze-R.ttf); */
+    src: url(fonts/karakaze-R.woff);
     font-weight: 600;
 }
+
 
 @font-face{
     font-family: "Klee";
@@ -403,10 +405,16 @@ footer{
 
     .category-list li {
         width: 100%;
-        display: flex;
-        align-items: center;
+        /* display: flex;
+        align-items: center; */
         padding-bottom: 0;
     }
+
+    .category-list a{
+        display: flex;
+        align-items: center;
+    }
+    
     
     .category-list img {
         width: 100%;
@@ -443,12 +451,13 @@ footer{
         height: auto;
     }
 
-    footer {
+    /* footer {
         height: 120px;
-    }
+    } */
 
     .header-sp-icon-wrap{
         position: absolute;
+        position: fixed;
         width: 20px;
         height: 20px;
         display: flex;

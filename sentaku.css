@@ -6,7 +6,8 @@
 
 @font-face{
     font-family: "からかぜ";
-    src: url(fonts/karakaze-R.ttf);
+    /* src: url(fonts/karakaze-R.ttf); */
+    src: url(fonts/karakaze-R.woff);
     font-weight: 600;
 }
 
@@ -265,6 +266,7 @@ footer{
 
     .media-title {
         font-family: "からかぜ";
+        /* font-family: "はんなり"; */
         font-size: 32px;
         margin: 210px 0;
         justify-content: center;
@@ -336,9 +338,14 @@ footer{
 
     .category-list li {
         width: 100%;
+        /* display: flex;
+        align-items: center; */
+        padding-bottom: 0;
+    }
+
+    .category-list a{
         display: flex;
         align-items: center;
-        padding-bottom: 0;
     }
     
     .category-list img {
@@ -376,9 +383,9 @@ footer{
         height: auto;
     }
 
-    .footer {
+    /* .footer {
         height: 120px;
-    }
+    } */
 
     .media-header-sp-nav {
         display: grid;
@@ -386,6 +393,7 @@ footer{
 
     .media-header-sp-icon-wrap{
         position: absolute;
+        position: fixed;
         width: 20px;
         height: 20px;
         display: flex;

@@ -6,9 +6,11 @@
 
 @font-face{
     font-family: "からかぜ";
-    src: url(fonts/karakaze-R.ttf);
+    /* src: url(fonts/karakaze-R.ttf); */
+    src: url(fonts/karakaze-R.woff);
     font-weight: 600;
 }
+
 
 @font-face{
     font-family: "Klee";
@@ -65,6 +67,7 @@ body{
 .left-side-content h1 {
     list-style: none;
     font-family: "からかぜ";
+    
     font-size: 27px;
     margin: 16% 0 10% 9%;
 }
@@ -135,9 +138,9 @@ body{
 .right-side{
     right: 0;
     overflow-y: scroll;
-    display: flex;
+    /* display: flex;
     flex-flow: column;
-    min-height: 100vh;
+    min-height: 100vh; */
 }
 
 .header{
@@ -572,11 +575,24 @@ footer{
         font-size: 25px;
     }
 
-    .category-list li {
+    /* .category-list li {
         width: 100%;
         display: flex;
         align-items: center;
         padding-bottom: 0;
+    }
+     */
+
+     .category-list li {
+        width: 100%;
+        /* display: flex;
+        align-items: center; */
+        padding-bottom: 0;
+    }
+
+    .category-list a{
+        display: flex;
+        align-items: center;
     }
     
     .category-list img {
@@ -621,6 +637,7 @@ footer{
 
     .header-sp-icon-wrap{
         position: absolute;
+        position: fixed;
         width: 20px;
         height: 20px;
         display: flex;
