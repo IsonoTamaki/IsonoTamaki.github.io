@@ -1,24 +1,168 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
   <head>
-    <title>天気予報API</title>
-    <!-- 必要なメタタグ -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- 文字コード設定 -->
+    <meta charset="UTF-8" />
+
+    <!-- いろんなデバイス幅で表示崩れが起きないようにするやつ -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- ページタイトル -->
+    <title>せんたくびより</title>
+
+    <!-- ページ情報 -->
+    <meta name="description" content="ここにページの説明を書く"/>
+
+    <!-- css読み込み -->
+    <link rel="stylesheet" href="sentaku.css" />
+
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"
     ></script>
+
   </head>
 
   <body>
-    <!-- javascriptで得た結果を表示する場所 -->
-    <ul id="messages"></ul>
-    <div id="result"></div>
+    <div class="split-box left-side">
+      <img class="left-side-visual" src="images/main-visual.png" alt="メインビジュル" />
+      <div class="left-side-content">
+        <h1><a href="index.html">せんたくびより</a></h1>
+       <ul class="header-nav-list">
+        <li>
+          <a href="sentakushisu.html">現在地周辺の洗濯指数</a>
+        </li>
+        <li>
+          <a href="sentaku1.html">洗濯をする前に</a>
+        </li>
+        <li>
+          <a href="sentaku2.html">洗濯用洗剤・柔軟剤のイロハ</a>
+        </li>
+        <li>
+          <a href="sentaku3.html">洗濯のコツ</a>
+        </li>
+        <li>
+          <a href="sentaku4.html">干し方のコツ</a>
+        </li>
+      </ul>
+      <div class="header-nav-list2">
+         <div class="header-nav-shisu">
+           <p>◎明日の洗濯指数</p>
+           <div id="header-shisu-icon">
+               <!-- <img src="images/shisu-icon-bgnone1.png"/> -->
+               <p class="header-nav-shisu-setsumei" id="header-shisu-setsumei"></p>
+           </div>
+         </div>
+      </div>
+      </div>
+    </div>
 
-    <!-- 天気予報APIを参照するためのjavascript -->
-    <!-- <script src="weather.js"></script> -->
+    <div class="split-box right-side">
+      <div class="media-title">
+        <p>せんたくびより</p>
+        <a href="sentakushisu.html">
+          1週間の洗濯指数を調べる
+          <img src="images/right.png" />
+        </a>
+      </div>
+      <section class="about">
+      <div class="media-about-title">
+        <p>about</p>
+      </div>
+      <div class="about-text">
+       「初めての一人暮らし、洗濯の仕方が分からない」<br> 
+       「午後から雨予報だったのに、洗濯物を干したまま出かけてしまった」<br> 
+        そんなことはありませんか?<br>
+        <br>
+        このサイトでは<br>
+       「洗濯物から気分を晴れやかに」をコンセプトのもと<br>
+        洗濯の仕方、洗濯物を乾かすのに適した曜日など<br>
+        洗濯に関する悩みを解決し<br>
+        より豊かなランドリーライフをサポートします。<br>
+        <br>
+        あなたの明日が晴れ渡りますように。
+      </div>
+      <div class="about-scroll">
+        <p>scroll</p>
+        <img src="images/scroll.png"/>
+      </div>
+      </section>
+
+  
+      
+      <section class="category">
+         <h3>CATEGORY</h3>
+         <ul class="category-list">
+          <li>
+            <a href="sentaku1.html">
+            <div class="category-img">
+              <img src="images/asset1.jpg" alt="カテゴリー写真" />
+            </div>
+            <div class="category-text">
+              <p class="category-list-title">洗濯をする前に</p>
+              <p class="category-list-about">
+                大切な衣服を良い状態で長く保つために、<br>
+                洗濯をする前にいくつかの確認事項があります。
+              </p>
+            </div>
+          </a>
+          </li>
+          <li>
+            <a href="sentaku2.html" class="category-list-reverse">
+            <div class="category-img">
+              <img src="images/asset2.jpg" alt="カテゴリー写真" />
+            </div>
+            <div class="category-text">
+              <p class="category-list-title">洗濯用洗剤・柔軟剤のイロハ</p>
+              <p class="category-list-about">
+                数多くの洗濯用洗剤・柔軟剤の中から<br>
+                あなたの洗濯物に適したものを選びましょう。
+              </p>
+            </div>
+            </a>
+          </li>
+          <li>
+            <a href="sentaku3.html">
+            <div class="category-img">
+              <img src="images/asset3.jpg" alt="カテゴリー写真" />
+            </div>
+            <div class="category-text">
+              <p class="category-list-title">洗濯のコツ</p>
+              <p class="category-list-about">
+                洗濯機を使用する場合と手洗いをする場合の<br>
+                洗濯のコツを紹介します。
+              </p>
+            </div>
+          </a>
+          </li>
+          <li>
+            <a href="sentaku4.html" class="category-list-reverse">
+            <div class="category-img">
+              <img src="images/asset4.jpg" alt="カテゴリー写真" />
+            </div>
+            <div class="category-text">
+              <p class="category-list-title">干し方のコツ</p>
+              <p class="category-list-about">
+                洗い終わった洗濯物を効率よく乾かすための<br>
+                干し方のコツを紹介します。
+              </p>
+            </div>
+          </a>
+          </li>
+          </ul>
+       </section>
+         
+       <footer>
+          <a class="scroll-top" href="">
+            <img src="images/up.png" />
+            <p>TOP</p>
+          </a>
+       </footer>
+
+    </div>
+
+    <script src="header-shisu.js"></script>
+
   </body>
 </html>

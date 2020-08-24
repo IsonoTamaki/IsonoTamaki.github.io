@@ -51,7 +51,7 @@ body{
 
 .left-side-content{
     width: 41%;
-    height: 50%;
+    height: 70%;
     position: absolute;
     z-index: 5;
     top: 0;
@@ -79,7 +79,7 @@ body{
 .header-nav-list{
     list-style: none;
     display: inline-block;
-    margin: 10% 0 0 9%;
+    margin: 6% 0 0 9%;
     font-family: "Klee";
 }
 
@@ -95,25 +95,18 @@ body{
 }
 
 .header-nav-list2 {
-    list-style: none;
     margin: 0 1w;
     margin-top: 25pt;
     margin-left: 20px;
 }
 
-.header-nav-list2 li{
+.header-nav-shisu h3{
     color: #311400;
-    font-size: 17px;
-    margin-top: 45pt;
-}
-
-.header-nav-list2 h2{
-    color: #311400;
-    font-size: 25px;
+    font-size: 28px;
     margin-top: 13pt;
 }
 
-.header-nav-list2 a{
+/* .header-nav-list2 a{
     width: 160px;
     height: 30px;
     font-size: 10px;
@@ -126,12 +119,16 @@ body{
     align-items: center;
     display: flex;
     justify-content: center;
-    margin-top: 20pt;
-}
+    margin-top: 20pt; */
+/* } */
 
 .header-nav-list2 img{
-    width: 5px;
-    margin-left: 3px;
+    margin: 5% 5% 5% 0;
+}
+
+div#header-shisu-icon {
+    display: flex;
+    font-size: 13px;
 }
 
 .right-side{
@@ -320,7 +317,7 @@ footer{
 
     .about-text {
         text-align: center;
-        font-size: 5px;
+        font-size: 14px;
         padding: 3%;
     }
 
@@ -361,11 +358,11 @@ footer{
     }
 
     p.category-list-about {
-        font-size: 7px;
+        font-size: 14px;
     }
 
     .category-list-title {
-        font-size: 14px;
+        font-size: 17px;
         margin: 10px 0 10px;
     } 
 

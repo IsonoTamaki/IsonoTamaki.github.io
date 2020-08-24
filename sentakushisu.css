@@ -249,10 +249,16 @@ body{
 
 .mikata-setsumei {
     padding: 10px  10px 50px;
+    width: 17%;
+}
+
+.mikata-setsumei img {
+    width: 100%;
 }
 
 .mikata-setsumei pre {
     font-family: "Klee";
+    font-size: 13px;
 }
 
 .shisu-about {
@@ -459,7 +465,7 @@ footer{
     }
 
     p.category-list-about {
-        font-size: 7px;
+        font-size: 14px;
     }
 
     .category-list-title {
@@ -546,14 +552,14 @@ footer{
     }
 
     .media-header-sp-nav-list{
-        width: 60%;
+        width: 77%;
         margin: auto;
         list-style: none;
     }
 
     .media-header-sp-nav-img-wrap{
-        width: 150px;
-        margin: 15vh auto 10vh;
+        width: 133px;
+        margin: 10vh auto 7vh;
     }
 
     .media-header-sp-nav-img-wrap a {
@@ -566,11 +572,11 @@ footer{
     }
 
     .media-header-sp-nav-list li{
-        margin-bottom: 60px;
+        margin-bottom: 33px;
     }
 
     .media-header-sp-nav-list a{
-        font-size: 20px;
+        font-size: 16px;
         color: #311400;
         text-decoration: none;
         display: flex;
@@ -581,6 +587,10 @@ footer{
 
     .media-header-sp-nav-list img{
         width: 7px;
+    }
+
+    main#sentakushisu {
+        text-align: center;
     }
 
     main#shisu-mikata {
@@ -604,6 +614,14 @@ footer{
 
     .mikata-setsumei p {
         font-size: 12px;
+    }
+
+    p.category-list-about {
+        font-size: 14px;
+    }
+
+    p.category-list-title {
+        font-size: 17px;
     }
 }
 
@@ -679,6 +697,7 @@ footer{
         white-space: nowrap;
         overflow: scroll;
         justify-content: left;
+        padding: 0 7% 2%;
     }
 
     .yoko-scroll {

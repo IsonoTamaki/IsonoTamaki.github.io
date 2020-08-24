@@ -22,6 +22,11 @@
     crossorigin="anonymous"
   ></script>
 
+  <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -49,6 +54,15 @@
           <a href="sentaku4.html">干し方のコツ</a>
         </li>
        </ul>
+       <div class="header-nav-list2">
+        <div class="header-nav-shisu">
+          <p>◎明日の洗濯指数</p>
+          <div id="header-shisu-icon">
+              <!-- <img src="images/shisu-icon-bgnone1.png"/> -->
+              <p class="header-nav-shisu-setsumei" id="header-shisu-setsumei"></p>
+          </div>
+        </div>
+     </div>
       </div>
     </div>
 
@@ -268,6 +282,8 @@
         </div>
 
         <script src="script.js"></script>
+        <script src="header-shisu.js"></script>
+
     
       </body>
     </html>

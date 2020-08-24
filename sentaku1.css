@@ -55,7 +55,7 @@ body{
 
 .left-side-content{
     width: 41%;
-    height: 50%;
+    height: 70%;
     position: absolute;
     z-index: 5;
     top: 0;
@@ -131,9 +131,14 @@ body{
 }
 
 .header-nav-list2 img{
-    width: 7px;
-    margin-left: 7px;
+    margin: 5% 5% 5% 0;
 }
+
+div#header-shisu-icon {
+    display: flex;
+    font-size: 13px;
+}
+
 
 .right-side{
     right: 0;
@@ -691,14 +696,14 @@ footer{
     }
 
     .media-header-sp-nav-list{
-        width: 60%;
+        width: 77%;
         margin: auto;
         list-style: none;
     }
 
     .media-header-sp-nav-img-wrap{
-        width: 150px;
-        margin: 15vh auto 10vh;
+        width: 133px;
+        margin: 10vh auto 7vh;
     }
 
     .media-header-sp-nav-img-wrap img{
@@ -706,11 +711,11 @@ footer{
     }
 
     .media-header-sp-nav-list li{
-        margin-bottom: 60px;
+        margin-bottom: 33px;
     }
 
     .media-header-sp-nav-list a{
-        font-size: 20px;
+        font-size: 16px;
         color: #311400;
         text-decoration: none;
         display: flex;
@@ -742,13 +747,9 @@ footer{
         font-size: 23px;
     }
 
-    .main-text{
-        font-size: 12px;
-    }
-
     .check-container {
         width: 320px;
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .sentakuhyouzi {
@@ -782,32 +783,22 @@ footer{
         font-size: 23px;
     }
 
-    div.introduction {
-        font-size: 11px;
-    }
 
     h.asset-title {
         font-size: 20px;
     } 
 
-    p.paragraf1,
-    p.paragraf2,
-    p.paragraf3,
-    p.paragraf6,
-    p.paragraf7 {
-        font-size: 11px;
-    }
 
     .asset1 h2 {
         font-size: 15px;
     }
 
     .category-text a{
-        font-size: 14px;
+        font-size: 17px;
     }
 
     p.category-list-about {
-        font-size: 11px;
+        font-size: 13px;
     }
 }
 
