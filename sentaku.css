@@ -295,6 +295,7 @@ footer{
         height: auto;
         margin-bottom: 210px;
         padding-top: 10px;
+        padding-bottom: 15px;
         background-color: rgba(235, 243, 255, 0.7);
     }
 
@@ -359,6 +360,7 @@ footer{
 
     p.category-list-about {
         font-size: 14px;
+        margin: 4% 11% 0;
     }
 
     .category-list-title {

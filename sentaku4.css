@@ -257,6 +257,10 @@ div#header-shisu-icon {
     padding: 20px 70px;
 }
 
+.attention-setsumei {
+    padding: 6px 85px 0;
+}
+
 .attention-text {
     padding: 15px 85px 50px;
 }
@@ -310,6 +314,7 @@ div#header-shisu-icon {
 
 .category-list-about{
     font-size: 8px;
+    margin: 4% 11% 0;
 }
 
 footer{
@@ -401,7 +406,8 @@ footer{
 
     .media-title {
         display: grid;
-        font-size: 24px;
+        font-size: 25px;
+        padding-left: 7%;
     }
 
     div.introduction {
@@ -409,7 +415,6 @@ footer{
     }
 
     .main-text {
-        text-align: center;
         font-size: 14px;
         margin: 20% 9%;
         background-color: rgba(235, 243, 255, 0.7);
@@ -419,6 +424,10 @@ footer{
         font-size: 22px;
         padding: 7%;
     }
+
+    h.three-point-title {
+        margin-left: 7%;
+    } 
 
     p.paragraf1,
     p.paragraf2 {
@@ -430,7 +439,7 @@ footer{
     }
 
     p.three-point-text {
-        padding: 3% 1% 7%;
+        padding: 2% 7% 5%;
     }
 
     .block img{
@@ -446,19 +455,25 @@ footer{
     }
 
     p.point-text2 {
-        padding: 5% 7%;
+        padding: 5% 7% 7%;
     }
 
     h.attention {
-        padding: 2%;
+        padding: 7%;
+        font-size: 17px;
     }
 
     h.point-title {
-        margin: 3%;
+        margin: 7%;
+    }
+
+    .attention-setsumei {
+        padding: 1% 7% 0;
+        font-size: 17px;
     }
 
     .attention-text {
-        padding: 3% 7% 4%;
+        padding: 3% 7% 12%;
     }
 
     .category-list {
@@ -616,6 +631,14 @@ footer{
 
 }
 
+@media screen and (max-width: 880px){
+    .main-text {
+        font-size: 14px;
+        line-height: 185%;
+    }
+}
+
+
 @media screen and (max-width: 580px) {
     .media-header p {
         font-size: 23px;
@@ -624,40 +647,11 @@ footer{
 }
 
 @media screen and (max-width: 540px) {
-    .introduction {
-        padding: 7% 0 7%;
-        font-size: 11px;
-    }
 
     div.media-title {
         font-size: 23px;
     }
 
-    .introduction {
-        font-size: 11px;
-    }
-
-    .asset-title {
-        padding: 5% 0 5% 0;
-        font-size: 20px;
-    }
-
-    h.three-point-title {
-        font-size: 15px;
-    }
-
-    h.point-title {
-        font-size: 15px;
-    }
-
-    p.paragraf1 {
-        padding: 7% 0 10%;
-    }
-
-    p.paragraf2 {
-        padding: 5% 0 10%;
-        font-size: 11px;
-    }
 
     p.category-list-about {
         font-size: 14px;

@@ -23,6 +23,10 @@ body{
     color: #311400;
 }
 
+br {
+    display: none;
+}
+
 .split-box{
     position: absolute;
     width: 50%;
@@ -302,6 +306,7 @@ div#header-shisu-icon {
 
 .category-list-about{
     font-size: 8px;
+    margin: 4% 11% 0;
 }
 
 footer{
@@ -396,17 +401,18 @@ footer{
     .media-title {
         display: grid;
         font-size: 25px;
+        padding: 0 7%;
     }
 
     .main-text {
-        text-align: center;
         font-size: 14px;
         margin: 20% 9%;
         background-color: rgba(235, 243, 255, 0.7);
+        line-height: 185%;
     }
 
     div .introduction{
-        padding: 5%;
+        padding: 7%;
     }
 
     .block img {
@@ -602,8 +608,15 @@ footer{
         color: #311400;
     }
 
-
 }
+
+@media screen and (max-width: 880px){
+    .main-text {
+        font-size: 14px;
+        line-height: 185%;
+    }
+}
+
 
 @media screen and (max-width: 580px) {
     .media-header p {
@@ -617,37 +630,8 @@ footer{
         font-size: 23px;
     }
 
-    div.introduction {
-        font-size: 11px;
-    }
-
     h.asset-title {
         font-size: 20px;
-    }
-
-    p.paragraf1 {
-        font-size: 11px;
-    }
-
-    p.paragraf2 {
-        font-size: 11px;
-    }
-
-    div.introduction-senzai {
-        font-size: 11px;
-    }
-
-    p.paragraf3,p.paragraf4,
-    p.paragraf5,p.paragraf6,p.paragraf7 {
-        font-size: 11px;
-    }
-
-    .category-text a{
-        font-size: 17px;
-    }
-
-    p.category-list-about {
-        font-size: 14px;
     }
 }
 

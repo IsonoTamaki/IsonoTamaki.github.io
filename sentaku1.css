@@ -23,6 +23,10 @@ body{
     color: #311400;
 }
 
+br {
+    display: none;
+}
+
 .split-box{
     position: absolute;
     width: 50%;
@@ -255,7 +259,7 @@ div#header-shisu-icon {
 
 .sentakuhyouzi-about1{
     font-size: 12px;
-    padding-top: 20px;
+    padding-top: 9%;
 }
 
 .sentakuhyouzi-about2{
@@ -311,6 +315,7 @@ div#header-shisu-icon {
     padding: 5%;
     margin: 3% 7%;
     box-shadow: 15px 15px 0px 0 rgb(224, 237, 255);
+    line-height: 175%;
 }
 
 .check-container {
@@ -402,6 +407,7 @@ div#header-shisu-icon {
 
 .category-list-about{
     font-size: 8px;
+    margin: 4% 11% 0;
 }
 
 footer{
@@ -494,13 +500,17 @@ footer{
     .media-title {
         display: grid;
         font-size: 25px;
+        padding-left: 7%;
     }
 
     .main-text {
-        text-align: center;
         font-size: 14px;
         margin: 20% 9%;
         background-color: rgba(235, 243, 255, 0.8);
+    }
+
+    br {
+        display: none;
     }
 
     .block img {
@@ -516,8 +526,8 @@ footer{
         padding: 0 7%;
     }
 
-    .asset1 h2 {
-        padding: 0 7%;
+    .main-text h2 {
+        padding-left: 5%;
     }
 
     .paragraf1 {
@@ -546,6 +556,10 @@ footer{
 
     .paragraf7 {
         padding: 3% 7% 10%;
+    }
+
+    .sentakuhyouzi_2 {
+        margin: 20px auto 0 ;
     }
 
     .check {
@@ -739,6 +753,7 @@ footer{
 @media screen and (max-width: 880px){
     .main-text {
         font-size: 14px;
+        line-height: 185%;
     }
 }
 
